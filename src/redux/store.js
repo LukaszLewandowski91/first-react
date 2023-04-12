@@ -22,6 +22,16 @@ export const addColumn = (payload) => ({ type: "ADD_COLUMN", payload });
 
 export const addCard = (payload) => ({ type: "ADD_CARD", payload });
 
+export const getListById = ({ lists }, listId) =>
+  lists.find((list) => list.id === listId);
+
+export const getColumnsByList = ({ columns }, listId) =>
+  columns.filter((column) => column.listId === listId);
+
+export const getAllLists = () => {
+  return (state) => state.lists;
+};
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "ADD_COLUMN":
