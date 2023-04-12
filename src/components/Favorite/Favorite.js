@@ -5,6 +5,7 @@ const Favorite = () => {
   return (
     <div className={styles.favorite}>
       <PageTitle>Favorite</PageTitle>
+      <p>Lorem ipsum</p>
     </div>
   );
 };
