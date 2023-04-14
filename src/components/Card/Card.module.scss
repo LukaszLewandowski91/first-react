@@ -11,3 +11,18 @@
   justify-content: space-between;
   font-weight: bold;
 }
+
+.button {
+  background: none;
+  border: none;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  color: gold;
+  cursor: pointer;
+}
+
+.button.favorite {
+  color: $color-warning;
+}
