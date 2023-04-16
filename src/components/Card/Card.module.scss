@@ -23,6 +23,18 @@
   cursor: pointer;
 }
 
+.buttonTrash {
+  background: none;
+  border: none;
+  color: gray;
+  transition: all 0.5s;
+}
+
+.buttonTrash:hover {
+  cursor: pointer;
+  color: $color-dark;
+}
+
 .button.favorite {
   color: $color-warning;
 }
